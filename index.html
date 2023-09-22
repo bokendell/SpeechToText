@@ -15,8 +15,12 @@
     <div class="file-upload">
         <h2>Convert Recording to text</h2>
         <form>
-            <label
-        </form>>
+            <input type="file" id="recording" accept="audio/*"/>
+            <button onclick="runSpeechRecog()">Transcribe Recording</button>
+            <p id="action"></p>
+        </form>
+
+        <h3 id="output" class="hide"></h3>
     </div>
 </body>
 </html>
